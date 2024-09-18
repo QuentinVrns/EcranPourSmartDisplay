@@ -83,6 +83,7 @@ namespace EcranPourSmartDisplay
             logoImage.Visibility = Visibility.Collapsed;
             salleComboBox.Visibility = Visibility.Collapsed;
             validateButton.Visibility = Visibility.Collapsed;
+            TitreProject.Visibility = Visibility.Collapsed;
             backButton.Visibility = Visibility.Visible;
 
             // Charger les images pour la salle sélectionnée

@@ -31,33 +31,39 @@
 
     <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
             <RowDefinition Height="10*" />
+            <RowDefinition Height="2*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
 
-        <Image x:Name="logoImage" Grid.Row="0"
+        <Image x:Name="logoImage" Grid.Row="1"
                HorizontalAlignment="Center" VerticalAlignment="Center"
                Source="Ressource/LogoSmart.png" Stretch="Uniform" Height="350" Width="600"
                Margin="0,10,0,10" />
 
+        <TextBlock x:Name="TitreProject" Grid.Row="2"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="50" FontWeight="Bold" Text="SmartDisplayProject" />
+
         <ComboBox x:Name="salleComboBox"
-          Grid.Row="1"
+          Grid.Row="3"
           HorizontalAlignment="Center"
           VerticalAlignment="Center"
           Width="200"
           Style="{StaticResource CustomComboBoxStyle}"
           SelectionChanged="salleComboBox_SelectionChanged" />
 
-        <Button x:Name="validateButton" Grid.Row="2"
+        <Button x:Name="validateButton" Grid.Row="4"
                 Content="Valider" HorizontalAlignment="Center" VerticalAlignment="Center"
                 Width="100" Height="25" Margin="5" FontSize="16" Click="ValidateButton_Click" />
 
-        <Button x:Name="backButton" Grid.Row="2"
+        <Button x:Name="backButton" Grid.Row="4"
                 Content="🔙 Retour" HorizontalAlignment="Center" VerticalAlignment="Center"
                 Width="100" Height="25" Margin="5" FontSize="16" Click="BackButton_Click" Visibility="Collapsed" />
 
-        <Image x:Name="imageControl" Grid.Row="0"
+        <Image x:Name="imageControl" Grid.Row="1"
            HorizontalAlignment="Center" VerticalAlignment="Center"
            Stretch="Uniform"
            Visibility="Collapsed" />
