@@ -37,8 +37,7 @@ namespace EcranPourSmartDisplay
                     response.EnsureSuccessStatusCode();
                     string responseBody = await response.Content.ReadAsStringAsync();
 
-                    // Afficher la réponse brute pour diagnostic
-                    MessageBox.Show($"Réponse de l'API : {responseBody}");
+
 
                     List<Salle> salles = JsonConvert.DeserializeObject<List<Salle>>(responseBody);
 

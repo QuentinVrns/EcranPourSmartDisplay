@@ -29,7 +29,8 @@
         </Style>
     </Window.Resources>
 
-    <Grid x:Name="MainGrid">
+    <Grid x:Name="MainGrid" >
+		
         <Grid.RowDefinitions>
             <RowDefinition Height="1*" />
             <RowDefinition Height="10*" />
@@ -60,8 +61,8 @@
                 Width="100" Height="25" Margin="5" FontSize="16" Click="ValidateButton_Click" />
 
         <Button x:Name="backButton" Grid.Row="4"
-                Content="🔙 Retour" HorizontalAlignment="Center" VerticalAlignment="Center"
-                Width="100" Height="25" Margin="5" FontSize="16" Click="BackButton_Click" Visibility="Collapsed" />
+                Content="🔙" HorizontalAlignment="Left" VerticalAlignment="Center"
+                Width="50" Height="25" Margin="5" FontSize="16" Click="BackButton_Click" Visibility="Collapsed" />
 
         <Image x:Name="imageControl" Grid.Row="1"
            HorizontalAlignment="Center" VerticalAlignment="Center"
